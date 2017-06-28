@@ -28,10 +28,10 @@ AppTranslateAsset::register($this);
         <div class="col-lg-12">
             <span class="pull-left btn-group">
             <?php   foreach ( [
-                        SourceMessageSearch::STATUS_ALL             => Module::t('All'),
-                        SourceMessageSearch::STATUS_TRANSLATED      => Module::t('Translated'),
-                        SourceMessageSearch::STATUS_NOT_TRANSLATED  => Module::t('Not Translated'),
-                        SourceMessageSearch::STATUS_DELETED         => Module::t('Deleted'),
+                        SourceMessageSearch::STATUS_ALL             => Module::t('Todos'),
+                        SourceMessageSearch::STATUS_TRANSLATED      => Module::t('Traduzido'),
+                        SourceMessageSearch::STATUS_NOT_TRANSLATED  => Module::t('Não Traduzido'),
+                        SourceMessageSearch::STATUS_DELETED         => Module::t('Deletado'),
                     ] as $status => $name ) { ?>
                 <a class="btn btn-default <?php
                     $params = ArrayHelper::merge(Yii::$app->request->getQueryParams(), [
